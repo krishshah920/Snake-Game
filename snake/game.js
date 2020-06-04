@@ -1,6 +1,6 @@
 import { update as updateSnake, draw as drawSnake, SNAKE_SPEED , getSnakeHead, snakeIntersection} from './snake.js'
 import { update as updateFood, draw as drawFood} from './food.js'
-import  {outsideGrid} from './rgrid.js'
+//import  {outsideGrid} from './grid.js'
 
 let lastRenderTime=0
 let gameOver = false
@@ -40,5 +40,5 @@ function draw()
 }
 
 function checkDeath(){
-    gameOver = outsideGrid(getSnakeHead()) || snakeIntersection()
+    gameOver = /*outsideGrid(getSnakeHead()) ||*/ snakeIntersection()
 }

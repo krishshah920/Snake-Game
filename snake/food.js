@@ -1,6 +1,5 @@
-import { randomGridPosition as randomGridPosition} from './rgrid.js'
 import {onSnake, expandSnake} from './snake.js'
-
+import { randomGridPosition } from './grid.js'
 let food = getRandomFoodposition()
 const EXPANSION_RATE = 1
 
@@ -24,7 +23,7 @@ export function draw(gameBoard) {
 function getRandomFoodposition(){
     let newFoodPosition
     while (newFoodPosition == null || onSnake(newFoodPosition)){
-        newFoodPosition ={x:20, y:10} //randomGridposition()
+        newFoodPosition =randomGridPosition()
     }
     return newFoodPosition
 }
