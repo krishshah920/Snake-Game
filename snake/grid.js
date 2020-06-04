@@ -1,4 +1,4 @@
-const GRID_SIZE = 41
+const GRID_SIZE = 31
 
 export function randomGridPosition(){
     return{
@@ -8,10 +8,12 @@ export function randomGridPosition(){
     }
 }
 
-/*
 export function outsideGrid(position){
-    return{
-        position:x<1||position.x>GRID_SIZE || 
-        position.y<1||position.y>GRID_SIZE
-    }
-}*/
+    
+    if(position.x<1||position.x>GRID_SIZE || 
+        position.y<1||position.y>GRID_SIZE)
+        return true
+    else 
+        return false
+    
+}
