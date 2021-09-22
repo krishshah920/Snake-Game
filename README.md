@@ -1,2 +1,4 @@
-# Basic-Projects
-This contains some of the basic games i developed.
+# Snake-game
+
+Language: HTML & CSS
+
